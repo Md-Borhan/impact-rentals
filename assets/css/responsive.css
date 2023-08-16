@@ -1,0 +1,257 @@
+@media (max-width: 1399px) {
+  /* 
+	===============================
+	Back to top Btn
+	===============================
+	*/
+  #scroll-up-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #scroll-up-btn img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .size-60 {
+    font-size: 45px;
+  }
+  /* 
+	===============================
+	 Header Section Responsive
+	===============================
+	*/
+  nav .main-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    background: #1a1818;
+    width: 50%;
+    -webkit-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    z-index: 9999;
+    padding: 0 10px;
+  }
+
+  nav .main-menu ul {
+    width: 100%;
+  }
+  nav .dropdown-list {
+    right: 50%;
+    transform: translate(50%);
+  }
+
+  nav .main-menu ul li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  nav .open-menu {
+    right: 0;
+    -webkit-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
+
+  nav .main-menu .dropdown-list li a {
+    color: #1a1818;
+    padding-left: 0;
+  }
+  nav .main-menu ul li a {
+    color: #fff;
+  }
+
+  nav .main-menu .dropdown-list li a::after {
+    background: #1a1818;
+  }
+  nav .main-menu ul li a::after {
+    background: #fff;
+  }
+  .search-box {
+    width: 40%;
+    margin-left: 15px;
+  }
+  input.search-box {
+    position: absolute;
+    z-index: 99999;
+  }
+  /* 
+	===============================
+	Hero Section Responsive
+	===============================
+	*/
+  .hero-banner {
+    margin-top: 140px;
+  }
+
+  /* 
+	===============================
+	 Certified Section Responsive
+	===============================
+	*/
+  .certified-img {
+    padding-right: 20px;
+  }
+  .certified-btn {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  /* 
+	===============================
+	Ready to Rent Section Responsive
+	===============================
+	*/
+  .ready-to-rent-section {
+    padding: 80px 0;
+  }
+  .ready-to-rent-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .position-absolute.ready-to-rent-img {
+    top: -16px;
+  }
+
+  /* 
+	===============================
+	Back to top Btn
+	===============================
+	*/
+  #scroll-up-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #scroll-up-btn img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .size-70 {
+    font-size: 45px;
+  }
+  .size-60 {
+    font-size: 35px;
+  }
+  .size-45 {
+    font-size: 30px;
+  }
+  .size-35 {
+    font-size: 25px;
+  }
+  .size-20 {
+    font-size: 16px;
+  }
+  .btn {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+  .certified-section {
+    padding: 50px 0;
+  }
+  .impact-section {
+    padding-top: 50px;
+  }
+  /* 
+	===============================
+	Header Section Responsive
+	===============================
+	*/
+  .logo svg {
+    width: 65%;
+  }
+  nav .main-menu {
+    width: 60%;
+  }
+  .hero-content {
+    width: auto;
+    padding: 0 10px;
+  }
+
+  /* 
+	===============================
+	 Equipment Section Responsive
+	===============================
+	*/
+  .rental-equipment {
+    padding: 35px 0;
+  }
+  .search-box {
+    margin-left: 0;
+    padding: 10px 15px;
+  }
+  .rental-equipment-search {
+    right: 5px;
+    top: 6px;
+    z-index: 99999;
+  }
+  .rental-equipment-search svg {
+    width: 75%;
+  }
+  /* 
+	===============================
+	 Certified Section Responsive
+	===============================
+	*/
+  .certified-img {
+    padding-right: 0px;
+  }
+  /* 
+	===============================
+	 Footer Section Responsive
+	===============================
+	*/
+  .footer-wrapper {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .size-70 {
+    font-size: 40px;
+  }
+  .size-60 {
+    font-size: 35px;
+  }
+  .size-45 {
+    font-size: 30px;
+  }
+  .size-20 {
+    font-size: 16px;
+  }
+  /* 
+	===============================
+	Header Section Responsive
+	===============================
+	*/
+  nav .main-menu {
+    width: 80%;
+  }
+
+  /* 
+	===============================
+	 Impact Section Responsive
+	===============================
+	*/
+  .impact-content {
+    padding: 50px 20px;
+  }
+  /* 
+	===============================
+	 Certified Section Responsive
+	===============================
+	*/
+
+  .certified-icon svg,
+  .footer-icon svg {
+    width: 50%;
+  }
+}

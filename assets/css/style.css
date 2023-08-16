@@ -1,0 +1,685 @@
+/* 
+==============================
+Google Font
+==============================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
+
+/* 
+==============================
+Basic Setup
+==============================
+*/
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.8;
+  overflow-x: hidden;
+  letter-spacing: 0.1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: var(--color-1a);
+  color: #fff;
+}
+
+::selection {
+  background: var(--color-1a);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-1a);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  height: 6rem;
+}
+
+a,
+span,
+label {
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:focus {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+button,
+input,
+textarea {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+button[type="submit"],
+button[type="reset"],
+button[type="button"] {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+=====================================
+Variables
+=====================================
+*/
+
+:root {
+  --primary-color: #8cc541;
+  --color-1a: #1a1818;
+  --color-e5: #e5e5e5;
+  --size-70: 70px;
+  --size-60: 60px;
+  --size-45: 45px;
+  --size-35: 35px;
+  --size-20: 20px;
+  --size-18: 18px;
+  --size-16: 16px;
+}
+
+/* 
+=====================================
+Variables
+=====================================
+*/
+
+/* 
+=======================
+Font Size
+=======================
+*/
+
+.size-70 {
+  font-size: var(--size-70);
+}
+
+.size-60 {
+  font-size: var(--size-60);
+}
+
+.size-45 {
+  font-size: var(--size-45);
+}
+
+.size-35 {
+  font-size: var(--size-35);
+}
+
+.size-20 {
+  font-size: var(--size-20);
+}
+
+.size-18 {
+  font-size: var(--size-18);
+}
+
+.size-16 {
+  font-size: var(--size-16) !important;
+}
+
+.size-14 {
+  font-size: var(--size-14) !important;
+}
+
+/* 
+========================
+Font Color
+========================
+*/
+
+.color-3a {
+  color: var(--primary-color) !important;
+}
+
+.color-1a {
+  color: var(--color-1a);
+}
+
+.color-e5 {
+  color: var(--color-e5);
+}
+
+/* 
+==========================
+Background Color
+==========================
+*/
+
+.bg-color-3a {
+  background: var(--primary-color);
+}
+
+.bg-color-1a {
+  background: var(--color-1a);
+}
+
+.bg-color-e5 {
+  background: var(--color-e5);
+}
+
+/* 
+==============================================
+==============================================
+Start Reuseble Components
+==============================================
+*/
+
+.vh-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.transition-1 {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.transition-2 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn {
+  background: var(--primary-color) 0% 0% no-repeat padding-box;
+  color: #fff;
+  border-radius: 8px;
+  padding: 14px 22px;
+  font-weight: 700;
+  font-size: var(--size-20);
+  text-transform: uppercase;
+  border: 2px solid var(--primary-color);
+}
+.btn:hover {
+  border: 2px solid var(--primary-color);
+  color: #fff;
+}
+.border-default {
+  border: 1px solid #575757b4;
+}
+.fw-black {
+  font-weight: 900 !important;
+}
+.bg-fit {
+  background-position: top center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+/* 
+==============================================
+End Reuseble Components
+==============================================
+*/
+
+/* 
+=========================================
+Start Header Section
+=========================================
+*/
+
+header {
+  z-index: 9999999999;
+  border-bottom: 8px solid var(--primary-color);
+}
+
+.h-icon {
+  width: 12px;
+  height: 12px;
+}
+.angle {
+  height: 6.35px;
+  width: 6.35px;
+}
+.search-icon,
+.close-icon {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+/* Search Popup */
+
+.search-popup {
+  display: none;
+}
+.search-box {
+  width: 83%;
+}
+.search-box::placeholder {
+  color: #707070;
+}
+.search-box:focus {
+  background: #fff;
+  border: 1px solid #575757;
+}
+
+.close-icon {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+/* Dropdown styles */
+.dropdown-list {
+  width: 288px;
+  top: 45px;
+  display: none;
+}
+
+.dropdown-list li:not(:last-child) {
+  border-bottom: 1px solid #a2a2a2;
+}
+
+.dropdown-parent:hover .dropdown-list {
+  display: block;
+}
+.dropdown-parent:hover .down-angle {
+  display: none;
+}
+
+.dropdown-parent:hover .up-angle {
+  display: inline;
+}
+
+.down-angle,
+.up-angle {
+  display: inline;
+  transition: opacity 0.3s;
+}
+
+.up-angle {
+  display: none;
+}
+
+nav .main-menu ul li a:hover {
+  color: var(--primary-color);
+}
+
+/*
+--------------------
+Hamburger Menu Btn
+--------------------
+*/
+
+.menu-show-hide-btn {
+  position: relative;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 3.5rem;
+  height: 0.5rem;
+  background: var(--primary-color);
+  margin: 0.6rem 0;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  -ms-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-10px, -7px);
+  -ms-transform: rotate(45deg) translate(-10px, -7px);
+  transform: rotate(45deg) translate(-10px, -7px);
+}
+
+/*
+----------------
+Sticky Menu
+----------------
+*/
+
+/* .sticky-menu {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+} */
+
+/* 
+=========================================
+End Header Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Hero Section
+=========================================
+*/
+
+.hero-banner {
+  background-image: linear-gradient(180deg, #1a1818d5 0%, #1a181872 100%),
+    url(../images/banner/hero-banner.jpg);
+  height: 100vh;
+  margin-top: 178px;
+  z-index: -1;
+}
+.hero-content {
+  width: 905px;
+  height: 100vh;
+}
+.hero-down-arrow {
+  width: 37px;
+}
+.play {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-icon {
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -125px;
+}
+/* 
+=========================================
+End Hero Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Equipment Section
+=========================================
+*/
+.equipment-section {
+  margin-top: -40px;
+  z-index: 100;
+}
+.equipment-card {
+  border: 1px solid #70707057;
+}
+
+.equipment-desc {
+  color: #575757;
+}
+.rental-equipment {
+  box-shadow: 0px 3px 6px #00000029;
+}
+.rental-equipment-search {
+  right: 12px;
+  top: 15px;
+}
+.equipment-btn {
+  padding: 12px 25px;
+}
+.equipment-btn:hover {
+  color: var(--color-1a);
+}
+.eqipment-list {
+  border-bottom: 2px solid #575757b4;
+}
+.eqipment-list button {
+  color: #a2a2a2;
+}
+.card-image {
+  background: linear-gradient(0deg, #ffffff 0%, #e5e5e5 100%);
+  max-height: 195px;
+}
+.absolute-img {
+  max-height: 258px;
+}
+.card-image img {
+  height: 232px;
+  width: 232px;
+}
+.equipment-icon {
+  transition: all 0.5s;
+}
+.equipment-card:hover .equipment-icon {
+  margin-left: 7px;
+}
+.equipment-card:hover.equipment-card img {
+  transform: scale(1.1);
+}
+.eqipment-list .mixitup-control-active {
+  color: var(--primary-color);
+  position: relative;
+  transition: all 0.5s;
+}
+.eqipment-list .mixitup-control-active::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: var(--primary-color);
+  left: 0;
+  bottom: -3px;
+  transition: all 0.5s;
+}
+/* 
+=========================================
+End Equipment Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Impact Section
+=========================================
+*/
+.impact-banner {
+  background: url(../images/banner/impact-banner.jpg);
+  background-position: center !important;
+  z-index: -1;
+}
+.impact-shape img {
+  max-width: 58%;
+}
+/* 
+=========================================
+End Impact Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Certified Section
+=========================================
+*/
+.certified-section {
+  padding: 125px 0;
+}
+.certified-alert-text {
+  color: #c54141;
+}
+.certified-img {
+  padding-right: 75px;
+}
+.certified-btn:hover {
+  color: var(--color-1a);
+}
+/* 
+=========================================
+End Certified Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Ready to Rent Section
+=========================================
+*/
+.ready-to-rent-section {
+  padding: 160px 0;
+  border-bottom: 13px solid var(--color-e5);
+}
+.position-absolute.ready-to-rent-img {
+  top: -135px;
+}
+.ready-to-rent-img img {
+  max-width: 70%;
+  height: 790px;
+}
+/* 
+=========================================
+End Ready to Rent Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Footer Section
+=========================================
+*/
+footer {
+  background-image: url(../images/banner/footer2.jpg);
+  mix-blend-mode: exclusion;
+}
+.footer-content {
+  mix-blend-mode: exclusion;
+}
+.footer-info li a:hover {
+  color: var(--primary-color);
+}
+.copy-right {
+  border-top: 1px solid var(--color-e5);
+  font-size: 15px;
+  opacity: 0.3;
+}
+/* 
+=========================================
+End Footer Section
+=========================================
+*/
+
+/* 
+===============================
+Back to top Btn
+===============================
+*/
+
+i {
+  font-size: 30px;
+  color: red;
+}
+
+#scroll-up-btn {
+  opacity: 0;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 99999;
+  background: var(--color-1a);
+  width: 4.5rem;
+  height: 4.5rem;
+  -webkit-animation: myBtn 3.5s infinite linear;
+  animation: myBtn 3.5s infinite linear;
+}
+
+#scroll-up-btn:hover {
+  -webkit-transform: translateY(-0.7rem);
+  -ms-transform: translateY(-0.7rem);
+  transform: translateY(-0.7rem);
+}
+
+@-webkit-keyframes myBtn {
+  0% {
+    right: 3rem;
+    bottom: 4rem;
+  }
+  25% {
+    bottom: 2rem;
+    right: 3rem;
+  }
+  50% {
+    right: 3rem;
+    bottom: 4rem;
+  }
+  75% {
+    bottom: 2rem;
+    right: 3rem;
+  }
+  100% {
+    right: 3rem;
+    bottom: 4rem;
+  }
+}
+
+@keyframes myBtn {
+  0% {
+    right: 3rem;
+    bottom: 4rem;
+  }
+  25% {
+    bottom: 2rem;
+    right: 3rem;
+  }
+  50% {
+    right: 3rem;
+    bottom: 4rem;
+  }
+  75% {
+    bottom: 2rem;
+    right: 3rem;
+  }
+  100% {
+    right: 3rem;
+    bottom: 4rem;
+  }
+}
